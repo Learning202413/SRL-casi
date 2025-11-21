@@ -1,0 +1,94 @@
+<div class="bg-white shadow-xl rounded-xl p-6">
+    <div class="border-b border-gray-200 mb-6">
+        <nav class="flex space-x-6" aria-label="Tabs">
+            <button type="button" data-tab="activas" class="tab-button border-b-2 py-4 px-1 text-center text-sm font-medium border-transparent text-gray-500 hover:border-gray-300 tab-active">
+                <i data-lucide="file-clock" class="w-4 h-4 inline mr-1"></i> Cotizaciones Activas
+            </button>
+            
+            <button type="button" data-tab="ots" class="tab-button border-b-2 py-4 px-1 text-center text-sm font-medium border-transparent text-gray-500 hover:border-gray-300">
+                <i data-lucide="settings" class="w-4 h-4 inline mr-1"></i> En Producción (OT)
+            </button>
+
+            <button type="button" data-tab="completadas" class="tab-button border-b-2 py-4 px-1 text-center text-sm font-medium border-transparent text-gray-500 hover:border-gray-300">
+                <i data-lucide="check-circle" class="w-4 h-4 inline mr-1"></i> Completadas
+            </button>
+
+            <button type="button" data-tab="rechazadas" class="tab-button border-b-2 py-4 px-1 text-center text-sm font-medium border-transparent text-gray-500 hover:border-gray-300">
+                <i data-lucide="archive" class="w-4 h-4 inline mr-1"></i> Rechazadas
+            </button>
+        </nav>
+    </div>
+
+    <div id="tab-activas" class="tab-content">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="table-header-bg">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Código</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Cliente</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Resumen</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Total</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Fecha</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Estado</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="tab-ots" class="tab-content hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="table-header-bg">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">ID OT</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Cliente</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Resumen</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Total</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Fase Actual</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="tab-completadas" class="tab-content hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-green-600"> <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">ID OT</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Cliente</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Resumen</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Total</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Estado Final</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="tab-rechazadas" class="tab-content hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-500">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Código</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Cliente</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Resumen</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Total</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Fecha</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Estado</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-white uppercase">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
